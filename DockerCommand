@@ -1,0 +1,27 @@
+Docker Commands for E-Auction
+
+
+//Create Docker Network 
+
+docker network create --attachable -d bridge eAuctionNet
+
+
+//Navigate to location where docker-compose file is present 
+
+Docker-compose up -d 
+
+
+//Run mongoDB
+
+
+docker run -it -d --name mongo-container -p 27017:27017 --network eAuctionNet --restart always -v mongodb_data_container:/data/db  mongo:latest
+
+
+//Run mysql
+
+docker run -it -d --name mysql-container --platform linux/amd64 -p 3306:3306 --network eAuctionNet -e MYSQL_ROOT_PASSWORD=auctionPsw --restart always -v mysql_data_container:/var/lib/mysql  mysql:latest
+
+//Run admirer
+
+
+docker run -it -d --name adminer -p 8080:8080 --network eAuctionNet  -e ADMINER_DEFAULT_SERVER=mysql-container --restart always adminer:latest
