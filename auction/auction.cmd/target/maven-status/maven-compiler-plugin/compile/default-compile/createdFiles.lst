@@ -1,0 +1,15 @@
+com/fse3/auction/cmd/api/commands/PlaceBidCommand.class
+com/fse3/auction/cmd/api/commands/DeleteProductCommand.class
+com/fse3/auction/cmd/CommandApplication.class
+com/fse3/auction/cmd/api/commands/BidCommandHandler.class
+com/fse3/auction/cmd/infrastructure/ProductEventSourcingHandler.class
+com/fse3/auction/cmd/api/commands/AddProductCommand.class
+com/fse3/auction/cmd/domain/EventStoreRepository.class
+com/fse3/auction/cmd/domain/BidAggregate.class
+com/fse3/auction/cmd/api/controllers/AddProductController.class
+com/fse3/auction/cmd/api/commands/CommandHandler.class
+com/fse3/auction/cmd/infrastructure/ProductEventStore.class
+com/fse3/auction/cmd/api/commands/UpdateBidCommand.class
+com/fse3/auction/cmd/api/dto/AddProductResponse.class
+com/fse3/auction/cmd/infrastructure/ProductCommandDispatcher.class
+com/fse3/auction/cmd/infrastructure/ProductEventProducer.class

@@ -1,0 +1,9 @@
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/QueryApplication.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/infrastructure/handlers/ProductEventHandler.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/domain/Buyer.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/infrastructure/consumers/ProductEventConsumer.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/domain/Product.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/domain/BuyerRepository.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/infrastructure/consumers/EventConsumer.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/domain/ProductRepository.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.query/src/main/java/com/fse3/auction/query/infrastructure/handlers/EventHandler.java

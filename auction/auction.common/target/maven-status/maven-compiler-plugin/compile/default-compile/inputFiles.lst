@@ -1,0 +1,8 @@
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/dto/Buyer.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/dto/Seller.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/dto/BaseResponse.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/dto/CategoryType.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/events/AddProductEvent.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/events/PlaceBidEvent.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/events/BidUpdateEvent.java
+/Users/ramyagunashekara/Documents/e-auction/auction/auction.common/src/main/java/com/fse3/auction/common/events/DeleteProductEvent.java
