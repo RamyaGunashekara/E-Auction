@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "a09bd983-1608-4acc-9102-03636d9499e0",
+		"name": "E-Auction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "root",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "PASSWORD",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productName\": \"Dinning Table\",\n    \"shortDescription\": \"Family of four\",\n    \"category\": 3,\n    \"startPrice\": 100,\n    \"bidEndDate\": \"2022-09-22\",\n    \"firstName\" : \"John1\",\n    \"lastName\":\"Doe\",\n    \"state\":\"New South Wales\",\n    \"address\":\"Ryde\",\n    \"city\":\"6 Porter Street\",\n    \"detailedDescription\": \"This is a long detailedDescription\",\n    \"email\":\"john1.doe@gmail.com\",\n    \"amount\": 0,\n    \"phone\":\"9999999\",\n    \"pin\":\"999\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/v1/addProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"v1",
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PlaceBid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "root",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "PASSWORD",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Buyer\",\n    \"lastName\":\"5\",\n    \"state\":\"New South Wales\",\n    \"address\":\"Ryde\",\n    \"city\":\"6 Porter Street\",\n    \"phone\":\"9999999\",\n    \"pin\":\"2112\",\n    \"amount\": 100,\n    \"email\": \"buyer.5@gmail.com\",\n    \"productId\": \"f49a7cc5-ebef-4633-8bc1-c74106a972a1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/v1/buyer/place-bid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"v1",
+						"buyer",
+						"place-bid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBid",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "user",
+						"value": "root",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "PASSWORD",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 565,\n    \"email\": \"buyer.8974@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/v1/buyer/update-bid/1dff1b0d-25e5-44f2-a44b-d9d2165c5811",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"v1",
+						"buyer",
+						"update-bid",
+						"1dff1b0d-25e5-44f2-a44b-d9d2165c5811"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "1000.0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

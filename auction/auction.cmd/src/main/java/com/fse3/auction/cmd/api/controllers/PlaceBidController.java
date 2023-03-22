@@ -5,7 +5,6 @@ import com.fse3.auction.cmd.api.dto.AddProductResponse;
 import com.fse3.auction.common.dto.BaseResponse;
 import com.fse3.cqrs.core.exceptions.AggregateNotFoundException;
 import com.fse3.cqrs.core.infrastructure.CommandDispatcher;
-import com.fse3.cqrs.core.infrastructure.QueryDispatcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +23,7 @@ public class PlaceBidController {
     @Autowired
     private CommandDispatcher commandDispatcher;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping
     public ResponseEntity<BaseResponse> placeBid(@RequestBody PlaceBidCommand command){
         var id = UUID.randomUUID().toString();

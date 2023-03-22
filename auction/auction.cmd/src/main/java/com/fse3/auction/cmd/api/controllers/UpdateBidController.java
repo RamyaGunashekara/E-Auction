@@ -22,6 +22,7 @@ public class UpdateBidController {
     @Autowired
     private CommandDispatcher commandDispatcher;
 
+    @CrossOrigin(origins = "http://localhost:3000mvn ")
     @PutMapping(path = "/{id}")
     public ResponseEntity<BaseResponse> updateBid(@PathVariable(value = "id")String id,
             @RequestBody UpdateBidCommand command){

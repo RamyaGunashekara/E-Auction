@@ -14,7 +14,8 @@
 	<name>auction.query</name>
 	<description>Auction Query API Project</description>
 	<properties>
-		<java.version>16</java.version>
+		<java.version>17</java.version>
+		<spring-cloud.version>2021.0.3</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -42,6 +43,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -59,7 +61,9 @@
 			<artifactId>auction.common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-	</dependencies>
+    </dependencies>
+
+
 
 	<build>
 		<plugins>

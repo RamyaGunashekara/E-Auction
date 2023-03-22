@@ -21,16 +21,21 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+            <optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+            <version>3.0.4</version>
+            <scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>com.asrevo</groupId>
+            <artifactId>spring-cloud-starter-ecs-discoveryclient</artifactId>
+            <version>0.0.7</version>
+        </dependency>
+    </dependencies>
 </project>

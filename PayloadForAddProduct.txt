@@ -1,0 +1,57 @@
+Payload for Add Product
+
+{
+    "productName": "Dog Pillow",
+    "shortDescription": "5-piece soft toy set, ocean animals/mixed colours",
+    "category": 1,
+    "startPrice": 15,
+    "bidEndDate": "2023-09-22",
+    "firstName": "Clickety",
+    "lastName": "Clack",
+    "state": "South Australia",
+    "address": "1 Tapleys Hill Road",
+    "city": "Davoren Park South",
+    "detailedDescription": "Beneath the surface of the ocean is a magical world full of exciting creatures. Does your child recognise the 5 animals in this group?",
+    "email": "Clickety.Clack@gmail.com",
+    "amount": 0,
+    "phone": "0562 347 320",
+    "pin": "5113"
+}
+
+
+{
+    "productName": "Wardrobe",
+    "shortDescription": "Wardrobe combination, white/white",
+    "category": 8,
+    "startPrice": 3666,
+    "bidEndDate": "2023-09-22",
+    "firstName": "Decorating",
+    "lastName": "Den Interiors",
+    "state": "Queensland",
+    "address": " 76 McDowall Street",
+    "city": "Highworth",
+    "detailedDescription": "A wardrobe with a compartment for everything. For those who really love organising each item, big or small, and still have a nice overview. Sorting on style or color is up to you.",
+    "email": "Decorating.DenInteriors@gmail.com",
+    "amount": 0,
+    "phone": " 0753220381",
+    "pin": "4560"
+}
+
+
+{
+    "productName": "Outdoor kitchen",
+    "shortDescription": "Outdoor kitchen, gas barbecue/side burner/stainless steel",
+    "category": 14,
+    "startPrice": 1949,
+    "bidEndDate": "2023-09-22",
+    "firstName": "Encore",
+    "lastName": "Electric",
+    "state": "New South Wales",
+    "address": " 43 Dora Creek",
+    "city": "South Lismore",
+    "detailedDescription": "The built-in thermometer on the hood helps you check the temperature during grilling – without having to lift the hood.",
+    "email": "Encore.Electric@gmail.com",
+    "amount": 0,
+    "phone": "(02) 6740 6264",
+    "pin": "2480"
+}

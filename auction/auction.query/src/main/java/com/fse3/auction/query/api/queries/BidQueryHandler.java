@@ -2,6 +2,7 @@ package com.fse3.auction.query.api.queries;
 
 import com.fse3.auction.query.domain.Buyer;
 import com.fse3.auction.query.domain.BuyerRepository;
+import com.fse3.auction.query.domain.Product;
 import com.fse3.auction.query.domain.ProductRepository;
 import com.fse3.cqrs.core.domain.BaseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 @Service
 public class BidQueryHandler implements QueryHandler{
+
     @Autowired
     private BuyerRepository buyerRepository;
 
@@ -34,6 +36,14 @@ public class BidQueryHandler implements QueryHandler{
         }
         List<BaseEntity> productList = new ArrayList<>();
         productList.add(product.get());
+        return productList;
+    }
+
+    @Override
+    public List<BaseEntity> handle(FindAllProducts query) {
+        Iterable<Product> products = productRepository.findAll();
+        List<BaseEntity> productList = new ArrayList<>();
+        products.forEach(productList::add);
         return productList;
     }
 }
