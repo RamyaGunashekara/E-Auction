@@ -41,9 +41,10 @@ public class BidQueryHandler implements QueryHandler{
 
     @Override
     public List<BaseEntity> handle(FindAllProducts query) {
-        Iterable<Product> products = productRepository.findAll();
+        Iterable<Product> products = productRepository.findAll(Sort.by(Sort.Direction.ASC, "productName"));
         List<BaseEntity> productList = new ArrayList<>();
         products.forEach(productList::add);
         return productList;
     }
+
 }
